@@ -1,2 +1,3 @@
 
-print ('hello world ')
+print ('hello ghana')
+print ('hello ccctrdytiuiuyg')
