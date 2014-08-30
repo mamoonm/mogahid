@@ -74,3 +74,15 @@ if __name__ == "__main__":
     sampleheight = 7
     print("the area is :", cylinder_area(sampleradius, sampleheight))
 
+def trapezium_area(b1,b2,height):
+    """
+
+    :param b1: upper side of trapezium
+    :param b2: lower side of trapezium
+    :param height: height of trapezium
+    :return:area (units^2 from height,b1 or b2)
+    >>> trapezium_area(2,3,5)
+    12.5
+    """
+    return 0.5*(b1+b2)*height
+print(trapezium_area(2,3,5))
