@@ -10,7 +10,7 @@ def circle_area(radius: Number) ->Number:
     :return: area of the circle(in units of radius)
 
     """
-    return pi*radius**2
+    return math.pi*radius**2
 print(circle_area(7))
 
 def triangle_area(base, height):
@@ -23,7 +23,7 @@ def triangle_area(base, height):
     """
     return 0.5*base*height
 
-print(triangle_area(2,4))
+print(triangle_area(4,5))
 
 def rectangle_area(length,width):
     """
@@ -45,5 +45,32 @@ def sphere_volume(radius):
     >>> sphere _volume
         1436.7550402417319
     """
-    return 4*pi*radius*radius*radius/3
+    return 4*math.pi*radius*radius*radius/3
 print(sphere_volume(7))
+
+def cone_volume(radius, height):
+    """
+    calculate the volume of cone.
+    :param radius: radius of cone
+    :param height: height of cone
+    :return:the volume  of the cone
+    """
+
+    return 4*radius*radius*height*0.333
+print(cone_volume(3,4))
+
+def cylinder_area(radius, height):
+    """
+    calculate the area of cylinder
+    :param radius: radius of a cylinder
+    :param height: height of a cylinder
+    :return:the area of the cylinder
+    """
+    return 2*math.pi*(radius**2)*height
+
+
+if __name__ == "__main__":
+    sampleradius = 4
+    sampleheight = 7
+    print("the area is :", cylinder_area(sampleradius, sampleheight))
+
