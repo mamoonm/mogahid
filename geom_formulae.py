@@ -86,3 +86,32 @@ def trapezium_area(b1,b2,height):
     """
     return 0.5*(b1+b2)*height
 print(trapezium_area(2,3,5))
+
+def equal_area(might,side):
+    """
+    calcluate the area of equal
+    :param might: might of a equal
+    :param side: side of a equal
+    :return:the area of equal
+    """
+    return (might+side)*2
+print(equal_area(3,4))
+
+def pentagon_area(side,height):
+    """
+
+    :param side: side of a pentagon
+    :param height: height a pentagon
+    :return:the area of pentagon(unit^2 from side or height)
+    """
+    return 0.5*side*height*5
+print(pentagon_area(4,6))
+
+def cube_area(side):
+    """
+
+    :param side:side of a cube
+    :return:the area of a cube
+    """
+    return side*6
+print(cube_area(3))
