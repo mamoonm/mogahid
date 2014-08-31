@@ -8,7 +8,8 @@ def circle_area(radius: Number) ->Number:
     Calculates the area of a circle given the radius
     :param radius: radius of the circle
     :return: area of the circle(in units of radius)
-
+    >>>circle_area(7)
+    153.93804002589985
     """
     return math.pi*radius**2
 print(circle_area(7))
@@ -20,6 +21,7 @@ def triangle_area(base, height):
     :param heigh: heigh of a triangle
     :return:area of atringle
     >>> triangle_area(4, 5)
+    10.0
     """
     return 0.5*base*height
 
@@ -54,9 +56,11 @@ def cone_volume(radius, height):
     :param radius: radius of cone
     :param height: height of cone
     :return:the volume  of the cone
+    >>> con_volume(3,4)
+    47.952000000000005
     """
 
-    return 4*radius*radius*height*0.333
+    return 4*radius*radius*height/3
 print(cone_volume(3,4))
 
 def cylinder_area(radius, height):
@@ -65,6 +69,8 @@ def cylinder_area(radius, height):
     :param radius: radius of a cylinder
     :param height: height of a cylinder
     :return:the area of the cylinder
+    >>> cylinder_area(4,7)
+    703.7167544041137
     """
     return 2*math.pi*(radius**2)*height
 
@@ -87,15 +93,17 @@ def trapezium_area(b1,b2,height):
     return 0.5*(b1+b2)*height
 print(trapezium_area(2,3,5))
 
-def equal_area(might,side):
+def rhombus_area(height,side):
     """
-    calcluate the area of equal
-    :param might: might of a equal
-    :param side: side of a equal
-    :return:the area of equal
+    calcluate the area of rhombus
+    :param height: might of rhombus
+    :param side: side of a rhombus
+    :return:the area of rhombus
+    >>> rhombus_area(3,4)
+    14
     """
-    return (might+side)*2
-print(equal_area(3,4))
+    return (height+side)*2
+print(rhombus_area(3,4))
 
 def pentagon_area(side,height):
     """
@@ -103,6 +111,8 @@ def pentagon_area(side,height):
     :param side: side of a pentagon
     :param height: height a pentagon
     :return:the area of pentagon(unit^2 from side or height)
+    >>> pentagon_area(4.6)
+    60.0
     """
     return 0.5*side*height*5
 print(pentagon_area(4,6))
@@ -111,7 +121,10 @@ def cube_area(side):
     """
 
     :param side:side of a cube
-    :return:the area of a cube
+    :return:the area of a cube(units^ from side)
+    >>> cube_area(3)
+    54
     """
-    return side*6
+    return (side*side)*6
 print(cube_area(3))
+
