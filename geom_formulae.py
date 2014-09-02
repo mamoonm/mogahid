@@ -56,7 +56,7 @@ def cone_volume(radius, height):
     :param radius: radius of cone
     :param height: height of cone
     :return:the volume  of the cone
-    >>> con_volume(3,4)
+    >>> cone_volume(3,4)
     47.952000000000005
     """
 
@@ -111,7 +111,7 @@ def pentagon_area(side,height):
     :param side: side of a pentagon
     :param height: height a pentagon
     :return:the area of pentagon(unit^2 from side or height)
-    >>> pentagon_area(4.6)
+    >>> pentagon_area(4,6)
     60.0
     """
     return 0.5*side*height*5
@@ -127,4 +127,3 @@ def cube_area(side):
     """
     return (side*side)*6
 print(cube_area(3))
-
